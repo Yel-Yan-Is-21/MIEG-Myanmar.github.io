@@ -1,0 +1,122 @@
+@media(max-width: 768px){
+/* ---responsive grid--- */
+    .col-c-md-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+/* ---Home section--- */
+    .hero-content{
+        width: 100%;
+        padding: 0 0.1rem;
+        /* text-align: left; */
+    }
+    .des{
+        width: 95%;
+    }
+}
+@media(max-width: 560px){
+/* ---responsive grid--- */
+    .col-c-sm-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+/* ---bannerstatement--- */
+    .banner-statement{
+        bottom: 32px;
+    }
+/* ---testimonial--- */
+    .testimonials-slider{
+        padding: 0.5rem;
+    }
+    .testimonial p{
+        max-width: 100% !important; 
+    }
+/* ---footer--- */
+    .footer .container-origin,
+    .testimonials .container-origin,
+    .featured-project .container-origin,
+    .about .container-origin{
+        padding: 0 0.8rem;
+    }
+    /* ---renovation--- */
+    .hero-content-missions{
+        height  : 90vh;
+        padding: 0 0.1rem;
+    }
+}
+
+@media(min-width: 560px){
+    /* ---contact-section--- */
+    .contact-info{
+        grid-template-columns: minmax(0, 300px);
+        justify-content: center;
+    }
+    .contact-form{
+        width: 360px;
+        margin-inline: auto;
+    }
+}
+@media(min-width: 768px){
+/* ---responsive grid--- */
+    .col-c-lg-3{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+    .col-c-lg-2{
+        grid-template-columns: repeat(2, minmax(0 , 1fr));
+    }
+/* ---navigation--- */
+    nav .logo{
+        margin-left: 4rem;  
+    }
+    .nav__toggle{
+        top: 2.5rem; right: 6rem;
+    }
+/* ---renovation page--- */
+    .renovation .swiper .swiper-controls,
+    .renovation .swiper .swiper-pagination{
+        display: none;
+    }
+/* ---contact page--- */
+    .contact-container{
+        grid-template-columns: repeat(2, max-content) !important;
+        justify-content: space-evenly;
+    }
+}
+/* --customize swiper buttons and responsive project image--- */
+@media(max-width: 886px){
+    .swiper-controls{
+        left: 56%;
+    }
+    .swiper-button-prev{
+        left: 40%;
+    }
+/* --testimonial--- */
+    .testimonials-title{
+        margin-bottom: 2rem;
+    }
+/* ---footer--- */
+    .footer .container-origin .row{
+        display: grid;
+        gap: 4rem;
+    }
+/* ---mission page--- */
+    .mission{
+        margin-top: 2rem;
+    }
+    .vision{
+        margin-bottom: 2rem;
+    }
+}
+/* ---responsive project image--- */
+@media(max-width: 1086px){
+        /* --project-card--- */
+        .project-card{
+            min-height: 10rem;
+        }
+        .project-title{
+            background-color: hsl(var(--clr-opacity)/ .7);
+            position: absolute;
+            inset: 0 0 0 0;
+        }
+        .project-link:hover .project-title{
+            background-color: hsl(var(--clr-opacity)/ .3);
+        }
+}
